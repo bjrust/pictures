@@ -3,7 +3,7 @@ env.Message2 = 'Hey World 2'
 
 node {
    stage 'Stage 1'
-   echo "$Message1 $BRANCH_NAME"
+   echo "$Message1 ${env.BRANCH_NAME}"
    stage 'Stage 2'
-   echo "$Message2 $env.WORKSPACE"
+   echo "$Message2 ${env.WORKSPACE}"
 }
